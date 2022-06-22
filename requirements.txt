@@ -1,0 +1,5 @@
+flask
+xkcd-python
+Pillow
+lxml
+gunicorn
