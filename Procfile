@@ -1,1 +1,1 @@
-web:waitress-serve --listen=*:8000 wsgi:app
+web:python wsgi.py
