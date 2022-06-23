@@ -1,1 +1,1 @@
-web:gunicorn wsgi:app.app
+web:waitress-serve --listen=*:8000 wsgi:app

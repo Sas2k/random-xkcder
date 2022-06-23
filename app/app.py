@@ -30,3 +30,6 @@ def index():
     res.raw.decode_content = True
     img = Image.open(res.raw)
     return serve_image(img)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
