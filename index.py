@@ -31,4 +31,5 @@ def index():
     img = Image.open(res.raw)
     return serve_image(img)
 
-app.run()
+# uncomment this out when running locally
+# app.run()
