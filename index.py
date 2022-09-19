@@ -1,7 +1,7 @@
 from flask import Flask, send_file
 from PIL import Image
 from io import BytesIO
-from xkcd_python import Client
+from xkcd import Client
 import requests
 
 client = Client()
