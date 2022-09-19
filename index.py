@@ -1,10 +1,10 @@
 from flask import Flask, send_file
 from PIL import Image
 from io import BytesIO
-from xkcd import Client
+from xkcd import xkcd
 import requests
 
-client = Client()
+client = xkcd()
 app = Flask(__name__)
 
 def serve_image(img):
