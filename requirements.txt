@@ -1,4 +1,4 @@
 Flask
 Pillow
-xkcd-python==3.1.1
+xkcd-python
 requests
