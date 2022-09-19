@@ -38,5 +38,5 @@ urllib3==1.26.9
 waitress==2.1.2
 webencodings==0.5.1
 Werkzeug==2.1.2
-xkcd-python
+xkcd-python==2.9.0
 zipp==3.8.0
