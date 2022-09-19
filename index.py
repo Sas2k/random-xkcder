@@ -31,6 +31,5 @@ def index():
     img = Image.open(res.raw)
     return serve_image(img)
 
-# un-comment this when running locally
-# if __name__ == "__main__":
-#     app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
