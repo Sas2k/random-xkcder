@@ -17,4 +17,4 @@ just put the thing below to use it
 ## Built-With 🏗\
 
 - Python
-- [xkcd-python](https://github.com/Sas2k/xkcd-python) (used to use this but not anymore)
+- [xkcd-python](https://github.com/Sas2k/xkcd-python) (used to use this but not anymore, due to vercel having trouble with it.)
