@@ -7,11 +7,11 @@ import requests
 client = xkcd()
 app = Flask(__name__)
 
-def serve_image(img):
+def serve_image(img, img_id):
     io_img = BytesIO()
     img.save(io_img, 'png')
     io_img.seek(0)
-    return send_file(io_img, mimetype='image/png')
+    return send_file(io_img, mimetype='image/png', download_name=f'xkcd-{img_id}.png')
 
 @app.after_request
 def set_response_headers(response):
@@ -26,10 +26,11 @@ def set_response_headers(response):
 @app.route("/", methods=['GET'])
 def index():
     img_url = client.random()["img"]
+    img_id = client.random()["num"]
     res = requests.get(img_url, stream=True)
     res.raw.decode_content = True
     img = Image.open(res.raw)
-    return serve_image(img)
+    return serve_image(img, img_id)
 
 # uncomment this out when running locally
 # app.run()
